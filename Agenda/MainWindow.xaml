@@ -1,0 +1,31 @@
+﻿<Window x:Class="Agenda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Agenda"
+        mc:Ignorable="d"
+        Title="Agenda" Height="600" Width="800" Loaded="Window_Loaded">
+    <Grid IsEnabled="true">
+        <Label Content="ID" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.106,0.271"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="14,41,0,0" Foreground="#FF351C1C" Width="117"/>
+
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="14,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.106,0.271"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="14,108,0,0" Width="758"/>
+
+        <Label Content="Email" HorizontalAlignment="Left" Margin="14,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.106,0.271"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="14,184,0,0" Width="758"/>
+
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="14,224,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.106,0.271"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="14,255,0,0" Width="758"/>
+
+        <DataGrid x:Name="dgDados" Margin="14,333,28,16" Background="#FFECE7E7" IsReadOnly="true" MouseDoubleClick="dgDados_MouseDoubleClick" SelectionMode="Single"/>
+        <Button x:Name="btnInserir" Content="Inserir" HorizontalAlignment="Left" Margin="14,292,0,0" VerticalAlignment="Top" Width="80" Click="btnInserir_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="134,292,0,0" VerticalAlignment="Top" Width="80" IsEnabled="true" Click="btnAlterar_Click"/>
+        <Button x:Name="btnLocalizar" Content="Localizar" HorizontalAlignment="Left" Margin="254,292,0,0" VerticalAlignment="Top" Width="80" Click="btnLocalizar_Click"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="381,292,0,0" VerticalAlignment="Top" Width="80" IsEnabled="true" Click="btnExcluir_Click"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="502,292,0,0" VerticalAlignment="Top" Width="80" Click="btSalvar_Click" IsEnabled="true"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="621,292,0,0" VerticalAlignment="Top" Width="80" IsEnabled="true" Click="btnCancelar_Click"/>
+
+    </Grid>
+</Window>
